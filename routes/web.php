@@ -7,7 +7,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\RendezVousController;
-
+Route::resource('/', HomeController::class);
 Route::resource('home', HomeController::class);
 Route::resource('about', AboutController::class);
 Route::resource('services', ServiceController::class);
